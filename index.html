@@ -8,11 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
-
 <link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"><link rel="stylesheet" href="./cardcss/cards.css">
+<!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css"><link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
 <script src="./script.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
     <div class="scroll-up-btn">
@@ -71,7 +71,7 @@
       </section>
     
       <!-- Services -->
-      <section class="services" id="services">
+      <!-- <section class="services" id="services">
         <div class="max-width">
           <h2 class="title">My services</h2>
           <div class="serv-content">
@@ -99,7 +99,7 @@
           </div>
         </div>
       </section>
-    
+     -->
       <!-- Skills -->
       <section class="skills" id="skills">
         <div class="max-width">
@@ -183,8 +183,8 @@
       </section>
     
       <!-- Projects -->
-      <section class="projects" id="projects">
-        <div class="max-width">
+      <div class="projectscards" id="cards">
+        <!-- <div class="max-width">
           <h2 class="title">MY Anime Web</h2>
           <div class="carousel owl-carousel">
             <div class="card">
@@ -230,8 +230,34 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div> -->
+        <card data-image="./IMG_20240126_140655.jpg">
+          <h1 slot="header">DevOps</h1>
+          <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
+        </card>
+        <card data-image="./IMG_20240126_140655.jpg">
+          <h1 slot="header">Machine Learning</h1>
+          <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
+        </card>
+        <card data-image="./IMG_20240126_140655.jpg">
+          <h1 slot="header">Data Analytics</h1>
+          <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
+        </card>
+        
+        <!-- <card data-image="https://cdn.pixabay.com/photo/2018/02/04/17/39/crypto-currency-3130381_960_720.jpg">
+          <h1 slot="header">Cryptocurrency</h1>
+          <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
+        </card>
+        
+          <card data-image="https://cdn.pixabay.com/photo/2016/04/13/19/20/binary-1327493_960_720.jpg">
+          <h1 slot="header">Full-Stack</h1>
+          <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
+        </card>
+          <card data-image="https://cdn.pixabay.com/photo/2019/12/17/05/53/security-4700815_960_720.jpg">
+          <h1 slot="header">Cyber Security</h1>
+          <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
+        </card> -->
+      </div>
     
       <!-- Contact -->
       <section class="contact" id="contact">
@@ -328,10 +354,11 @@
       </footer>
 
 
-      
+      <script src="./cardcss/cards.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
       <script src="./script.js"></script>
       <script src="jquery.min.js"></script>
-      <script src="owlcarousel/owl.carousel.min.js"></script>
+      <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
     
 </body>
 </html>
