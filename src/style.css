@@ -212,7 +212,7 @@ section .title::after {
 /*  Home  */
 .home {
   display: flex;
-  background: url("../wallpaperflare.com_wallpaper.jpg") no-repeat
+  background: url("../rsc/wallpaperflare.com_wallpaper.jpg") no-repeat
     right;
   height: 100vh;
   color: #fff;
