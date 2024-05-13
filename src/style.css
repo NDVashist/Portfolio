@@ -46,7 +46,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #1a6ad2, #fff, rgb(245, 5, 53));
+  background: linear-gradient(135deg, #228a3e, #fff,rgb(119, 112, 113));
 }
 
 /*  Simillar  */
@@ -105,7 +105,7 @@ section .title::after {
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: #1e3551;
+  color: #228a3e;
   padding: 0 5px;
   transform: translateX(-50%);
 }
@@ -122,7 +122,7 @@ section .title::after {
 
 .navbar.sticky {
   padding: 15px 0;
-  background: #1e3551;
+  background: black;
 }
 
 .navbar .max-width {
@@ -139,7 +139,7 @@ section .title::after {
 
 /*  Nav Logo Span Linear-Gradient  */
 .navbar .logo a span {
-  background: linear-gradient(135deg, #041d3d, #fff, crimson);
+  background: #228a3e;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease;
@@ -164,7 +164,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-  color: #1e3551;
+  color:#228a3e;
 }
 
 .navbar.sticky .menu li a:hover {
@@ -183,7 +183,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #1e3551;
+  background: #228a3e;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -212,8 +212,8 @@ section .title::after {
 /*  Home  */
 .home {
   display: flex;
-  background: url("../rsc/wallpaperflare.com_wallpaper.jpg") no-repeat
-    right;
+  /* background: url("../rsc/wallpaperflare.com_wallpaper.jpg") no-repeat right; */
+  background: #000;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -248,8 +248,9 @@ section .title::after {
 
 /* Linear Gradient */
 .home .home-content .text-3 span {
-  color: #1e3551;
-  background: linear-gradient(135deg, #041d3d, #fff, crimson);
+  color:#228a3e ;
+  /* background: linear-gradient(135deg, #228a3e, #fff, crimson); */
+  background: #228a3e;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
@@ -257,19 +258,19 @@ section .title::after {
 
 .home .home-content a {
   display: inline-block;
-  background: #1e3551;
+  background:#228a3e;
   color: #fff;
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
   font-weight: 400;
   border-radius: 6px;
-  border: 2px solid #1e3551;
+  border: 2px solid #228a3e;
   transition: all 0.3s ease;
 }
 
 .home .home-content a:hover {
-  color: #1e3551;
+  color: #228a3e;
   background: none;
   animation: pulsate 1s ease-in-out;
 } 
@@ -277,7 +278,7 @@ section .title::after {
 /*  About  */
 
 .about {
-  background: radial-gradient(#494b4c, white);
+  background: radial-gradient(#494b4c,black);
 }
 .about .title::after {
   content: "—Who I Am ?—";
@@ -311,7 +312,7 @@ section .title::after {
 /* Linear Gradiant */
 .about .about-content .right .text span {
   /* color: #1e3551; */
-  background: linear-gradient(135deg, #041d3d, #fff, crimson);
+  background: linear-gradient(135deg, #228a3e, #fff, crimson);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -322,19 +323,19 @@ section .title::after {
 
 .about .about-content .right a {
   display: inline-block;
-  background: #1e3551;
+  background: #228a3e;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid #1e3551;
+  border: 2px solid#228a3e;
   transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover {
-  color: #1e3551;
+  color: #228a3e;
   background: none;
   animation: pulsate 1s ease-in-out;
 }
@@ -345,6 +346,206 @@ body {
   font-weight: 500;
   background-color: #000;
   -webkit-font-smoothing: antialiased;
+}
+/* about card animation */
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  background-color: #f1f1f1;
+}
+
+.timeline>li {
+  position: relative;
+  margin-bottom: 50px;
+  min-height: 50px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline>li:after {
+  clear: both;
+}
+
+.timeline>li .timeline-panel {
+  float: right;
+  position: relative;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.timeline>li .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  border: 7px solid #f1f1f1;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #1ee2e7;
+}
+
+.timeline>li .timeline-image h4 {
+  margin-top: 12px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.timeline>li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+  margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+  .timeline:before {
+      left: 50%;
+  }
+
+  .timeline>li {
+      margin-bottom: 100px;
+      min-height: 100px;
+  }
+
+  .timeline>li .timeline-panel {
+      float: left;
+      width: 41%;
+      padding: 0 20px 20px 30px;
+      text-align: right;
+  }
+
+  .timeline>li .timeline-image {
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+  }
+
+  .timeline>li .timeline-image h4 {
+      margin-top: 16px;
+      font-size: 13px;
+      line-height: 18px;
+  }
+
+  .timeline>li.timeline-inverted>.timeline-panel {
+      float: right;
+      padding: 0 30px 20px 20px;
+      text-align: left;
+  }
+}
+
+@media(min-width:992px) {
+  .timeline>li {
+      min-height: 150px;
+  }
+
+  .timeline>li .timeline-panel {
+      padding: 0 20px 20px;
+  }
+
+  .timeline>li .timeline-image {
+      width: 150px;
+      height: 150px;
+      margin-left: -75px;
+  }
+
+  .timeline>li .timeline-image h4 {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 26px;
+  }
+
+  .timeline>li.timeline-inverted>.timeline-panel {
+      padding: 0 20px 20px;
+  }
+}
+
+@media(min-width:1200px) {
+  .timeline>li {
+      min-height: 170px;
+  }
+
+  .timeline>li .timeline-panel {
+      padding: 0 20px 20px 100px;
+  }
+
+  .timeline>li .timeline-image {
+      width: 170px;
+      height: 170px;
+      margin-left: -85px;
+  }
+
+  .timeline>li .timeline-image h4 {
+      margin-top: 40px;
+  }
+
+  .timeline>li.timeline-inverted>.timeline-panel {
+      padding: 0 100px 20px 20px;
+  }
 }
 
 /* cards projects  */
