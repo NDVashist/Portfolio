@@ -24,7 +24,7 @@
       <ul class="menu">
         <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
         <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
-        <li><a href="#services" class="menu-btn"><strong>Services</strong></a></li>
+        <!-- <li><a href="#services" class="menu-btn"><strong>Services</strong></a></li> -->
         <li><a href="#skills" class="menu-btn"><strong>Skills</strong></a></li>
         <li><a href="#projects" class="menu-btn"><strong>Projects</strong></a></li>
         <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
@@ -66,7 +66,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">About</h2>
@@ -144,7 +144,7 @@
       </div>
     </div>
   
-  </section>
+  </section> -->
 <!-- partial:index.partial.html -->
 <h2 class="title">Projects</h2>
 <div id="cards" class="projects">
@@ -152,13 +152,10 @@
     <h1 slot="header">DevOps</h1>
     <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
   </card>
-  <!-- <card data-image="https://cdn.pixabay.com/photo/2019/11/23/04/52/matrix-4646234_960_720.jpg">
-    <h1 slot="header">Machine Learning</h1>
-    <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
-  </card> -->
+  <!-- dd -->
   <card data-image="https://cdn.pixabay.com/photo/2013/11/20/09/35/background-213649_960_720.jpg">
-    <h1 slot="header">Data Analytics</h1>
-    <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
+    <h1 slot="header">Anime Web App</h1>
+    <p slot="content">Create an intuitive interface designed for anime fans, enriching their browsing on the Anime Web App made with HTML, CSS, and JavaScript. <a href="https://ndvashist.github.io/Anime_Web_App/">[GITHUB]</a></p>
   </card>
  
   
@@ -168,19 +165,52 @@
   </card>
     <card data-image="https://cdn.pixabay.com/photo/2019/12/17/05/53/security-4700815_960_720.jpg">
     <h1 slot="header">Sketch Artist</h1>
-    <p slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor; hodor hodor hodor. Hodor.</p>
+    <p slot="content">As a skilled sketch artist, I've crafted numerous captivating pieces across various subjects, showcasing my versatility and passion for the craft.</p>
   </card>
 </div>
+<!-- Contact  -->
 
-
-
-
-
-
-
-
-
+<section class="contact" id="contact">
+  <div class="contact-header">
+    <h3 id="co-title">Contact Me</h3>
+    <h1 id="co-text">Reach out for a new project or to say hello</h1>
+  </div>
   
+  <div class="contact-content">
+    <div class="contact-form">
+      <h3 id="form-title">Send me a message</h3>
+    <form action="mailto:nikhil.dhiman7973@gmail.com" method="post" enctype="text/plain">
+      <fieldset>
+        <div class="form-field">
+          <input name="name" type="text" id="name" placeholder="Your Name"></input>
+        </div>
+      <div class="form-field">
+          <input name="email" type="email" id="email" placeholder="Your Email"></input>
+        </div>
+      <div class="form-field">
+          <input name="Subject" type="text" id="subject" placeholder="Subject"></input>
+        </div>
+    <div class="form-field">
+          <textarea name="message" type="text" id="message" placeholder="Your Message"></textarea>
+        </div>
+      </fieldset>
+  <input id="form-btn" type="submit" value="send">
+    </form>
+</div>
+  
+    <div class="contact-info">
+      <h3>Email Me At </h3>
+      <a href="mailto:nikhil.dhiman7973@gmail.com"><p>nikhil.dhiman7973@gmail.com</p></a>
+      <h3>Find Me On </h3>
+      <div class="contact-links">
+        <a><i class="fab fa-linkedin"></i></a>
+        <a><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    </div>
+</section>
+
+ 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
 <script  src="./src/script.js"></script>
 <script src="./src/home.js"></script>
