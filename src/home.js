@@ -67,3 +67,9 @@ function checkBoxes() {
         }
     })
 }
+document.getElementById('downloadBtn').addEventListener('click', function () {
+    const link = document.createElement('a');
+    link.href = '../rsc/NikhilDhimanResume .pdf'; // The URL to the file
+    link.download = 'NikhilDhiman-Resume.pdf'; // The name to save the file as
+    link.click();
+});

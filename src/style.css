@@ -212,8 +212,8 @@ section .title::after {
 /*  Home  */
 .home {
   display: flex;
-  /* background: url("../rsc/wallpaperflare.com_wallpaper.jpg") no-repeat right; */
-  background: #000;
+  background: url("../rsc/backimg.png") no-repeat right;
+  /* background: #000; */
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -312,8 +312,9 @@ section .title::after {
 /* Linear Gradiant */
 .about .about-content .right .text span {
   /* color: #1e3551; */
-  background: linear-gradient(135deg, #228a3e, #fff, crimson);
+  background:#228a3e;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
