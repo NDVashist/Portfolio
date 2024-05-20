@@ -278,7 +278,7 @@ section .title::after {
 /*  About  */
 
 .about {
-  background: radial-gradient(#494b4c,black);
+  background: radial-gradient(#202223,#4e4e4e,black)  no-repeat;
 }
 .about .title::after {
   content: "—Who I Am ?—";
@@ -813,7 +813,8 @@ h1 + p, p + p {
   display: flex;
   flex-direction: column; 
   position: relative;
-  background: linear-gradient(to bottom right, rgba(0,0,0, 0.9),rgba(0,0,0, 0.9), rgba(3, 61, 10, 0.9)), url("#") center no-repeat;
+  /* background: linear-gradient(to bottom right, rgba(0,0,0, 0.9),rgba(0,0,0, 0.9), rgba(3, 61, 10, 0.9)), url("#") center no-repeat; */
+  background: url("../rsc/backimg.png") left;
   background-size: cover;
 }
 
